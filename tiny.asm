@@ -1,6 +1,6 @@
-BITS 32
-GLOBAL _start
+BITS 64
+GLOBAL main
 SECTION .text
-_start:
+main:
   mov     eax, 42
   ret
