@@ -1,6 +1,7 @@
 BITS 64
+EXTERN _exit
 GLOBAL _start
 SECTION .text
 _start:
-  mov     eax, 42
-  ret 
+  push    dword 42
+  call    _exit
